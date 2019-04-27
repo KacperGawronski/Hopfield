@@ -44,10 +44,10 @@ public class Main {
 
     private static List<List<Double>> calculateVectorC(List<Double> vector) {
         List<List<Double>> result = new ArrayList<>();
-        List<Double> temporaryVector = new ArrayList<>();
+        List<Double> temporaryVector;
 
         for(int i=0; i < 25; i++) {
-            temporaryVector.clear();
+            temporaryVector = new ArrayList<>(); 
             for(int j=0; j < 25; j++) {
                 if (j != i)
                     temporaryVector.add((vector.get(i) - 0.5) * (vector.get(j) - 0.5));
