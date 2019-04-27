@@ -74,9 +74,9 @@ public class Main {
 
     private static List<List<Double>> calcualteVectorW(List<List<Double>> vectorC) {
         List<List<Double>> vectorW = new ArrayList<>();
-        List<Double> temporaryVectorW = new ArrayList<>();;
+        List<Double> temporaryVectorW;
         for(int i=0; i < 25; i++) {
-            temporaryVectorW.clear();
+            temporaryVectorW = new ArrayList<>();
             for(int j=0; j < 25; j++)
                 temporaryVectorW.add(2*vectorC.get(i).get(j));
             vectorW.add(temporaryVectorW);
